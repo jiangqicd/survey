@@ -135,6 +135,19 @@ function next_question(index) {
 }
 
 $("#start").on("click", function () {
+    var name = $("#name").val()
+    console.log(name)
+    var age = $("#age").val()
+    var isExpert = null
+    var obj = document.getElementsByName("expert")
+    for (var i = 0; i < obj.length; i++) {
+        if (obj[i].checked) {
+            isExpert = obj[i].value
+        }
+    }
+    result["isExpert"] = isExpert
+    result["name"] = name
+    result["age"] = age
     $("#user").remove()
     $("#title").remove()
     startSurvey()
