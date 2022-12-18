@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz</title>
+    <title>User Study</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.css"
           rel="stylesheet">
@@ -18,7 +18,7 @@
 </head>
 <body>
 <!-- <script src="script.js"></script> -->
-<div class="container" id="container">
+<div class="container"id="container">
     <div class="row" style="background: #dc8540;text-align: center" id="title">
         <h1>A survey on Factexplorer</h1>
     </div>
@@ -27,10 +27,13 @@
             Your Name: <input type="text" id="name">
         </div>
         <div style="padding-left: 20px;float: left">
-            Your Age: <input type="number" id="age">
+            Your Age: <input type="number" id="age" style="width:50px"> years
         </div>
-        <div style="padding-left: 20px;float: left">
-            isExpert: <input type="radio" name="expert" value="yes">Yes<input type="radio" name="expert" value="no">No
+		<div style="padding-left: 20px;float: left">
+            Your experience in data analysis: <input type="number" id="experience" step="0.5" style="width:50px"> years
+        </div>
+		<div style="padding-left: 20px;float: left">
+            Gender: <input type="radio", name="gender", value="male">male<input type="radio", name="gender", value="female" >female
         </div>
         <div style="padding-left: 20px;float: left">
             <button type="button" id="start" style="color: #384ade;">

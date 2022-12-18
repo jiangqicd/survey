@@ -138,16 +138,18 @@ $("#start").on("click", function () {
     var name = $("#name").val()
     console.log(name)
     var age = $("#age").val()
-    var isExpert = null
-    var obj = document.getElementsByName("expert")
+    var experience = $("#experience").val()
+    var Gender = null
+    var obj = document.getElementsByName("gender")
     for (var i = 0; i < obj.length; i++) {
         if (obj[i].checked) {
-            isExpert = obj[i].value
+            Gender = obj[i].value
         }
     }
-    result["isExpert"] = isExpert
     result["name"] = name
+    result["gender"] = Gender
     result["age"] = age
+    result["experience in data analysis"] = experience
     $("#user").remove()
     $("#title").remove()
     startSurvey()

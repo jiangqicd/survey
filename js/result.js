@@ -1,5 +1,1 @@
-var result={
-    "name":"",
-    "age":"",
-    "isExpert":false,
-}
+var result={}
